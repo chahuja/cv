@@ -38,7 +38,12 @@ def get_pub_md(context, config):
         if len(authors) > 1:
             authors[-1] = "and " + authors[-1]
         sep = ", " if len(authors) > 2 else " "
-        return sep.join(authors)
+        authors = sep.join(authors)
+
+        # Hacky fix for special characters.
+        authors = authors.replace('\\"o', '&ouml;')
+
+        return authors
 
     # [First Initial]. [Last Name]
     def _format_author_list(immut_author_list):
@@ -91,6 +96,11 @@ def get_pub_md(context, config):
 </div>
 '''.format(pub['ID'], prefix, abstract)
 
+        if '_note' in pub:
+            note_str = '<strong>{}</strong><br>'.format(pub['_note'])
+        else:
+            note_str = ''
+
         if includeImage:
             return '''
 <tr>
@@ -99,11 +109,12 @@ def get_pub_md(context, config):
     <strong>{}</strong><br>
     {}<br>
     {}<br>
+    {}
     {}<br>
     {}
 </td>
 </tr>
-'''.format(imgStr, title, author_str, yearVenue, links, abstract)
+'''.format(imgStr, title, author_str, yearVenue, note_str, links, abstract)
         else:
             return '''
 <tr>
@@ -111,11 +122,12 @@ def get_pub_md(context, config):
     <strong>{}</strong><br>
     {}<br>
     {}<br>
+    {}
     {}<br>
     {}
 </td>
 </tr>
-'''.format(title, author_str, yearVenue, links, abstract)
+'''.format(title, author_str, yearVenue, note_str, links, abstract)
 
     def load_and_replace(bibtex_file):
         with open(os.path.join('publications', bibtex_file), 'r') as f:
@@ -234,9 +246,12 @@ class RenderContext(object):
                     continue
                 section_template_name = os.path.join(self.SECTIONS_DIR, 'news.md')
                 section_data['items'] = section_content
+            elif section_tag == 'service':
+                section_data['items'] = section_content
+                section_template_name = os.path.join(
+                    self.SECTIONS_DIR, 'skills' + self._file_ending)
             elif section_tag in ['coursework', 'education', 'honors',
-                                 'industry', 'research',
-                                 'skills', 'teaching']:
+                                 'industry', 'research', 'skills', 'teaching']:
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)

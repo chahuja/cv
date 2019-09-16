@@ -1,7 +1,7 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\vspace{-6mm}
+\vspace{-8mm}
 \hfill
 Google Scholar ID:
 \href{https://scholar.google.com/citations?user=<< scholar_id >>}{<< scholar_id >>}
@@ -13,7 +13,10 @@ Google Scholar ID:
 \subsection{<<p.heading>>}
 \begin{refsection}[publications/<<p.file>>]
 \nocite{*}
-\printbibliography[heading=none,prefixnumbers=<<p.prefix>>]
+% \printbibliography[heading=none,prefixnumbers=<<p.prefix>>]
+\newrefcontext[labelprefix=<<p.prefix>>]
+% \assignrefcontextkeyws[labelprefix=<<p.prefix>>]{<<p.prefix>>}
+\printbibliography[heading=none] %, prefixnumbers=<<p.prefix>>]
 \end{refsection}
 ~< endfor >~
 

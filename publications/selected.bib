@@ -1,9 +1,103 @@
+@article{amos2019limited,
+  title={{The Limited Multi-Label Projection Layer}},
+  author={Brandon Amos and Vladlen Koltun and J. Zico Kolter},
+  journal={arXiv preprint arXiv:1906.08707},
+  year={2019},
+  _venue={arXiv},
+  url={https://arxiv.org/abs/1906.08707},
+  codeurl={https://github.com/locuslab/lml},
+  abstract={
+    We propose the Limited Multi-Label (LML) projection layer as a new
+    primitive operation for end-to-end learning systems. The LML layer
+    provides a probabilistic way of modeling multi-label predictions
+    limited to having exactly k labels. We derive efficient forward and
+    backward passes for this layer and show how the layer can be used to
+    optimize the top-k recall for multi-label tasks with incomplete label
+    information. We evaluate LML layers on top-k CIFAR-100 classification
+    and scene graph generation. We show that LML layers add a negligible
+    amount of computational overhead, strictly improve the model's
+    representational capacity, and improve accuracy. We also revisit the
+    truncated top-k entropy method as a competitive baseline for top-k
+    classification.
+  }
+}
+
+@phdthesis{amos2019differentiable,
+  author       = {Brandon Amos},
+  title        = {{Differentiable Optimization-Based Modeling for Machine Learning}},
+  school       = {Carnegie Mellon University},
+  year         = 2019,
+  month        = May,
+  _venue = {Ph.D. Thesis},
+  codeurl={https://github.com/bamos/thesis},
+  url={https://github.com/bamos/thesis/raw/master/bamos_thesis.pdf},
+}
+
+@inproceedings{amos2018end,
+  title={{{Differentiable MPC for End-to-end Planning and Control}}},
+  author={Amos, Brandon and Rodriguez, Ivan Dario Jimenez and Sacks, Jacob and Boots, Byron and Kolter, J Zico},
+  year={2018},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  url={https://arxiv.org/abs/1810.13400},
+  codeurl={https://locuslab.github.io/mpc.pytorch/},
+  abstract={
+We present foundations for using Model Predictive Control (MPC) as a differentiable policy class for reinforcement learning in continuous state and action spaces. This provides one way of leveraging and combining the advantages of model-free and model-based approaches. Specifically, we differentiate through MPC by using the KKT conditions of the convex approximation at a fixed point of the controller. Using this strategy, we are able to learn the cost and dynamics of a controller via end-to-end learning. Our experiments focus on imitation learning in the pendulum and cartpole domains, where we learn the cost and dynamics terms of an MPC policy class. We show that our MPC policies are significantly more data-efficient than a generic neural network and that our method is superior to traditional system identification in a setting where the expert is unrealizable.
+  }
+}
+
+@inproceedings{brown2018depth,
+  title={Depth-Limited Solving for Imperfect-Information Games},
+  author={Brown, Noam and Sandholm, Tuomas and Amos, Brandon},
+  year={2018},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  url={http://arxiv.org/abs/1805.08195},
+  abstract={
+A fundamental challenge in imperfect-information games is that states do not have well-defined values. As a result, depth-limited search algorithms used in single-agent settings and perfect-information games do not apply. This paper introduces a principled way to conduct depth-limited solving in imperfect-information games by allowing the opponent to choose among a number of strategies for the remainder of the game at the depth limit. Each one of these strategies results in a different set of values for leaf nodes. This forces an agent to be robust to the different strategies an opponent may employ. We demonstrate the effectiveness of this approach by building a master-level heads-up no-limit Texas hold'em poker AI that defeats two prior top agents using only a 4-core CPU and 16 GB of memory. Developing such a powerful agent would have previously required a supercomputer.
+  }
+}
+
+@inproceedings{amos2018learning,
+  title={{{Learning Awareness Models}}},
+  author={Brandon Amos and Laurent Dinh and Serkan Cabi and Thomas Roth{\"o}rl and Sergio G{\'o}mez Colmenarejo and Alistair Muldal and Tom Erez and Yuval Tassa and Nando de Freitas and Misha Denil},
+  booktitle={International Conference on Learning Representations},
+  year={2018},
+  url={https://openreview.net/forum?id=r1HhRfWRZ},
+  _venue={ICLR},
+  abstract={
+    We consider the setting of an agent with a fixed body interacting with an
+    unknown and uncertain external world. We show that models
+    trained to predict proprioceptive information about the
+    agent's body come to represent objects in the external world.
+    In spite of being trained with only internally available
+    signals, these dynamic body models come to represent external
+    objects through the necessity of predicting their effects on
+    the agent's own body. That is, the model learns holistic
+    persistent representations of objects in the world, even
+    though the only training signals are body signals. Our
+    dynamics model is able to successfully predict distributions
+    over 132 sensor readings over 100 steps into the future and we
+    demonstrate that even when the body is no longer in contact
+    with an object, the latent variables of the dynamics model
+    continue to represent its shape. We show that active data
+    collection by maximizing the entropy of predictions about the
+    body---touch sensors, proprioception and vestibular
+    information---leads to learning of dynamic models that show
+    superior performance when used for control. We also collect
+    data from a real robotic hand and show that the same models
+    can be used to answer questions about properties of objects in
+    the real world. Videos with qualitative results of our models
+    are available <a href="https://goo.gl/mZuqAV">here</a>.
+  }
+}
+
 @inproceedings{donti2017task,
-  title={Task-based End-to-end Model Learning},
+  title={{{Task-based End-to-end Model Learning}}},
   author={Donti, Priya L and Amos, Brandon and Kolter, J Zico},
   year={2017},
-  booktitle={NIPS},
-  _venue={NIPS},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
   codeurl={https://github.com/locuslab/e2e-model-learning},
   url={http://arxiv.org/abs/1703.04529},
   abstract={
@@ -24,7 +118,7 @@
 }
 
 @inproceedings{amos2017optnet,
-  title = "{OptNet: Differentiable Optimization as a Layer in Neural Networks}",
+  title = {{{OptNet: Differentiable Optimization as a Layer in Neural Networks}}},
   author={Brandon Amos and J. Zico Kolter},
   booktitle={ICML},
   _venue={ICML},
@@ -58,7 +152,7 @@
 
 
 @inproceedings{amos2017input,
-  title={Input Convex Neural Networks},
+  title={{{Input Convex Neural Networks}}},
   author={Brandon Amos and Lei Xu and J. Zico Kolter},
   booktitle={ICML},
   _venue={ICML},
@@ -111,11 +205,11 @@
 }
 
 @techreport{amos2016openface,
-  title={OpenFace: A general-purpose face recognition
-    library with mobile applications},
+  title={{{OpenFace: A general-purpose face recognition
+    library with mobile applications}}},
   author={Amos, Brandon and Bartosz Ludwiczuk and Satyanarayanan, Mahadev},
   _venue={CMU},
-  year={2016},
+  year=2016,
   institution={Technical Report CMU-CS-16-118, CMU School of Computer Science},
   url={http://reports-archive.adm.cs.cmu.edu/anon/anon/2016/CMU-CS-16-118.pdf},
   codeurl={https://cmusatyalab.github.io/openface},

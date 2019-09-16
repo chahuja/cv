@@ -1,8 +1,8 @@
 name:
   first: Brandon
   last: Amos
-phone: ~(540)~947~1238
-email: bamos@cs.cmu.edu
+# phone: ~(540)~947~1238
+email: bda@fb.com
 pdf: /data/cv.pdf
 src: https://github.com/bamos/cv
 url: "bamos.github.io"
@@ -22,61 +22,108 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 # (tag, section type, title)
 order:
   - [about, NONE]
-  - [news, News]
+  # - [news, News]
   - [education, Education]
-  - [research, Research Experience]
+  - [industry, Experience]
+  # - [research, Research Experience]
   - [selected_publications, Selected Publications]
-  - [NEWPAGE, NEWPAGE]
+  # - [NEWPAGE, NEWPAGE]
   - [teaching, Teaching Experience]
-  - [industry, Industry Experience]
   # - [projects, Projects]
-  - [coursework, CMU Graduate Coursework]
+  # - [coursework, CMU Graduate Coursework]
   - [honors, Honors \& Awards]
+  - [service, Service]
   - [skills, Skills]
-  - [NEWPAGE, NEWPAGE]
+  # - [NEWPAGE, NEWPAGE]
   - [all_publications, All Publications]
 #  - [activities, Activities]
 
 about: '
-  I am a Computer Science Ph.D. student at Carnegie Mellon University
-  and am supported by an NSF graduate research fellowship.
-  I work with \href{http://zicokolter.com/}{Zico Kolter}
-  on machine learning and optimization.
-  I am particularly interested in improving our understanding of important
-  modeling problems in computer vision, language, and reinforcement learning
-  through the use of deep learning, optimization (sometimes convex),
-  theory, and statistics.
-  As examples, see our
-  \href{https://arxiv.org/abs/1609.07152}{input-convex neural network}
+  I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
+  broadly study foundational topics and applications in
+  <b>machine learning</b> (sometimes deep) and
+  <b>optimization</b> (sometimes convex),
+  including
+  reinforcement learning, computer vision, language,
+  statistics, and theory.
+  I have a Ph.D. from <b>Carnegie Mellon University</b> and was
+  advised by \href{http://zicokolter.com/}{Zico Kolter}
+  and supported by an <b>NSF graduate research fellowship.</b>
+  My thesis is on
+  \href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}.
+  My publications are available below and on
+  \href{https://scholar.google.com/citations?user=d8gdZR4AAAAJ}{my Google Scholar page}
+  and my open source contributions can be found on
+  \href{https://github.com/bamos}{my Github profile}.
+  I have also worked on <b>reinforcement learning</b>
+  during an internship with
+  \href{https://www.cs.ubc.ca/~nando/}{Nando de Freitas}
   and
-  \href{https://arxiv.org/abs/1703.00443}{OptNet}
-  papers. \\[0.5em]
+  \href{http://mdenil.com/}{Misha Denil}
+  at <b>DeepMind</b> in 2017
+  and on vision with
+  \href{http://vladlen.info}{Vladlen Koltun}
+  at <b>Intel Labs</b> in 2018.
+  <br><br>'
 
-  I strongly believe in open science and reproducible research
-  and actively publish code on \href{https://github.com/bamos}{my Github profile}.
-  I am also the author of
-  \href{https://cmusatyalab.github.io/openface/}{OpenFace},
-  which is an open source face recognition project that
-  uses deep learning.'
+# news:
+  # - date: Sept 2018
+  #   info: "I will be attending NIPS 2018 this year. Come see our work on
+  #     1) differentiable model predictive control and
+  #     2) depth-limited solving for imperfect-information games."
+  # - date: Mar 2018
+  #   info: "I will be at ICLR this year presenting
+  #   my DeepMind internship paper
+  #   <a href='https://openreview.net/forum?id=r1HhRfWRZ'>
+  #     Learning Awareness Models</a>."
+  # - date: Feb 2018
+  #   info: "I am interning at Intel Labs in Santa Clara this summer
+  #   with <a href='http://vladlen.info/'>Vladlen Koltun</a>."
+  # - date: Nov 2017
+  #   info: "I will be at NIPS 2017 this year.
+  #   Come see our
+  #   <a href='https://papers.nips.cc/paper/7132-task-based-end-to-end-model-learning-in-stochastic-optimization'>Task-based End-to-end Model Learning in Stochastic Optimization</a>
+  #   work at the main conference and our (unpublished)
+  #   End-to-end Model Predictive Control work at the
+  #   deep reinforcement learning symposium.
+  #   "
+  # - date: June 2017
+  #   info: "Our ICNN and OptNet papers have been accepted to ICML and
+  #   the camera-ready versions are available on arXiv."
+  # - date: May 2017
+  #   info: "I am interning at <a href='https://deepmind.com/'>Google DeepMind</a>
+  #   in London this summer with
+  #   <a href='http://www.cs.ox.ac.uk/people/nando.defreitas/'>Nando de Freitas</a>."
 
-news:
-  - date: June 2017
-    info: "Our ICNN and OptNet papers have been accepted to ICML and
-    the camera-ready versions are available on arXiv."
-  - date: May 2017
-    info: "I am interning at Google DeepMind in London this summer
-    with Nando de Freitas."
+
+service:
+  - title: Reviewer
+    details: ICML 2018, NeurIPS 2018, NeurIPS Deep RL Workshop 2018, ICLR 2019 (outstanding reviewer), ICML 2019, ICCV 2019
+  - title: Admissions
+    details: CMU CSD MS 2014-2015
+
+selected_repos:
+  https://github.com/locuslab/icnn
+  https://locuslab.github.io/qpth/
+  https://github.com/locuslab/qpth
+  https://github.com/locuslab/mpc.pytorch
+  https://github.com/bamos/densenet.pytorch
+  https://github.com/bamos/dcgan-completion.tensorflow
+  https://github.com/bamos/block
+  https://github.com/bamos/setGPU
 
 education:
   - school: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     degree: Ph.D. in Computer Science
-    dates: Aug 2014 -- Present
+    dates: Aug 2014 -- May 2019
+    overallGPA: 0.00/0.00
 
   - school: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     degree: M.S. in Computer Science
     dates: Aug 2014 -- May 2016
+    overallGPA: 0.00/0.00
 
   - school: Virginia Tech
     location: Blacksburg, Virginia
@@ -87,25 +134,36 @@ education:
     majorGPA: 4.00/4.00
 
   - school: Northside High School (Roanoke, Virginia)
-    dates: May 2011
+    dates: Aug 2007 -- May 2011
 
 research:
+  - place: Facebook AI
+    location: New York, New York
+    title: Research Scientist
+    dates: May 2019 -- Present
+    area: Machine learning and optimization
   - place: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     title: Research Assistant
-    advisor: Prof. Zico Kolter
-    dates: Apr 2016 -- Present
+    advisor: Zico Kolter
+    dates: Apr 2016 -- May 2019
     area: Machine learning and optimization
+  - place: Intel Labs
+    location: Santa Clara, California
+    title: Research Intern
+    dates: June 2018 -- Sept 2018
+    advisor: Vladlen Koltun
+    area: Machine learning
   - place: Google DeepMind
     location: London, UK
     title: Research Intern
     dates: May 2017 -- Oct 2017
-    advisor: Prof. Nando de Freitas
+    advisor: Nando de Freitas
     area: Machine and reinforcement learning
   - place: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     title: Research Assistant
-    advisor: Prof. Mahadev Satyanarayanan
+    advisor: Mahadev Satyanarayanan
     dates: Aug 2014 -- Apr 2016
     area: Applied machine learning and mobile systems
     details:
@@ -115,7 +173,7 @@ research:
   - place: Virginia Tech
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
-    advisor: Prof. Jules White
+    advisor: Jules White
     dates: May 2012 -- May 2014
     area: Mobile systems, cyber-physical systems, and security
     details:
@@ -132,7 +190,7 @@ research:
   - place: Virginia Tech
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
-    advisor: Prof. Layne Watson
+    advisor: Layne Watson
     dates: Jan 2013 -- May 2014
     area: Scientific computing, global/stochastic optimization, and bioinformatics
     details:
@@ -145,7 +203,7 @@ research:
   - place: Virginia Tech
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
-    advisor: Prof. Binoy Ravindran
+    advisor: Binoy Ravindran
     dates: Nov 2012 -- Mar 2014
     area: Heterogeneous compilers
     details:
@@ -157,6 +215,18 @@ research:
       #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
 industry:
+  - place: Facebook AI
+    location: New York, New York
+    title: Research Scientist
+    dates: May 2019 -- Present
+  - place: Intel Labs
+    location: Santa Clara, California
+    title: Research Intern
+    dates: June 2018 -- Sept 2018
+  - place: Google DeepMind
+    location: London, UK
+    title: Research Intern
+    dates: May 2017 -- Oct 2017
   - place: Adobe Research
     location: San Jose, California
     title: Data Scientist Intern
@@ -244,18 +314,18 @@ all_publications:
     - heading: Conference Proceedings
       prefix: C
       file: conference.bib
-    # - heading: Journal Articles
-    #   prefix: J
-    #   file: journal.bib
+    - heading: Journal Articles
+      prefix: J
+      file: journal.bib
     - heading: Workshop, Symposium, and Short Papers
       prefix: W
       file: short.bib
     - heading: Magazine Articles
       prefix: M
       file: magazine.bib
-    - heading: Posters
-      prefix: P
-      file: posters.bib
+    # - heading: Posters
+    #   prefix: S
+    #   file: posters.bib
 
 
 coursework:
@@ -292,40 +362,41 @@ coursework:
 
 skills:
   - title: Languages
-    details: Bash, C, C++, CSS, Fortran, Haskell, HTML, Java, JavaScript,
-      \LaTeX, Lua, Make, {\it Mathematica}, Python, R, Scala
+    details: C, C++, Fortran, Haskell, Java,
+      Lua, Make, {\it Mathematica}, Python, R, Scala
   - title: Frameworks
-    details: Akka, Android SDK/NDK, Caffe, Node.js, NumPy, TensorFlow,
-      Torch7, Pandas, SciPy, scikit-learn, Spark, Spray
+    details: NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
   - title: Systems
     details: Linux, OSX
 
 honors:
-  # - title: Phi Beta Kappa Honor Society
-    # year: Inducted May 2014
   - title: NSF Graduate Research Fellowship
     year: 2016 -- 2019
-  - title: 1st Place Undergraduate Senior Capstone Award, Virginia Tech Computer Science
-    year: 2014
-  - title: David Heilman Research Award, Virginia Tech Computer Science
-    year: 2014
+  - title: "Eight undergraduate scholarships"
+    year: 2011 -- 2014
+  # - title: Phi Beta Kappa Honor Society
+    # year: Inducted May 2014
+  # - title: 1st Place Undergraduate Senior Capstone Award, Virginia Tech Computer Science
+  #   year: 2014
+  # - title: David Heilman Research Award, Virginia Tech Computer Science
+  #   year: 2014
     # descr: Awarded to the Computer Science student with the most
     #   outstanding research experience.
-  - title: Senior Scholar Award, Virginia Tech Computer Science
-    year: 2014
+  # - title: Senior Scholar Award, Virginia Tech Computer Science
+  #   year: 2014
     # descr: Awarded to the senior in Computer Science with the most
     #        outstanding academic record.
   # - title: ACC Meeting of the Minds Undergraduate Research Conference, 2014
    # url: http://www.vtnews.vt.edu/articles/2014/03/030514-uged-accmom.html
-  - title: Honorable Mention, CRA Outstanding Undergraduate Researcher Award
-    year: 2014
+  # - title: Honorable Mention, CRA Outstanding Undergraduate Researcher Award
+  #   year: 2014
     # descr: 1 of 15 North American males awarded honorable mention for
     #        exemplary computer science research.
     # url: http://cra.org/awards/undergrad-view/2014_outstanding_undergraduate_award_recipients/
   #- title: Qualstar Award, Qualcomm, 2013
   #- title: Pi Mu Epsilon Honor Society, Inducted 2013
-  - title: Awarded eight undergraduate merit scholarships
-    year: 2011 -- 2014
+  # - title: Awarded eight undergraduate merit scholarships
+  #   year: 2011 -- 2014
   # - title: Benjamin F. Bock Merit Scholarship, Virginia Tech Engineering
     # year: 2013 -- 2014
   # - title: Sophomore Scholar Award, Virginia Tech Computer Science, 2013
@@ -370,32 +441,32 @@ honors:
   #- title: 3rd Place District Foreign Extemporaneous Speaker,
   #         VHSL Forensics, 2009
 
-projects:
-  website:
-    name: Personal Blog and Website
-    url: http://bamos.github.io
-    details:
-      - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
-          for static HTML generation.
-      - '{\bf 42 posts} across the following tags,
-        listed by highest frequency.'
-      - Python, Bash, Linux, LaTeX, Fortran, Android, Scala, News,
-        JavaScript, Zsh, C++, OpenMP, Lua, Make, Mathematica, mpv
-  github:
-    name: GitHub Portfolio
-    url: http://github.com/bamos
-    details:
-      - Hosts code samples, original source code, and patches for
-        open source projects.
-      - 25 original repositories, 5 forked repositories.
+# projects:
+#   website:
+#     name: Personal Blog and Website
+#     url: http://bamos.github.io
+#     details:
+#       - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
+#           for static HTML generation.
+#       - '{\bf 42 posts} across the following tags,
+#         listed by highest frequency.'
+#       - Python, Bash, Linux, LaTeX, Fortran, Android, Scala, News,
+#         JavaScript, Zsh, C++, OpenMP, Lua, Make, Mathematica, mpv
+#   github:
+#     name: GitHub Portfolio
+#     url: http://github.com/bamos
+#     details:
+#       - Hosts code samples, original source code, and patches for
+#         open source projects.
+#       - 25 original repositories, 5 forked repositories.
 
-activities:
-  - Honors Residential College, Virginia Tech, 2013 -- 2014
-  - Hokies Pep Band, Virginia Tech, 2012 -- 2013
-  - Computer Science Community Service, Virginia Tech, 2012
-  - Symphony Band, Virginia Tech, 2011 -- 2012
-  - Linux and Unix Users Group, Virginia Tech, 2011 -- 2012
-  - Galileo Living -- Learning Community, Virginia Tech, 2011 -- 2012
+# activities:
+#   - Honors Residential College, Virginia Tech, 2013 -- 2014
+#   - Hokies Pep Band, Virginia Tech, 2012 -- 2013
+#   - Computer Science Community Service, Virginia Tech, 2012
+#   - Symphony Band, Virginia Tech, 2011 -- 2012
+#   - Linux and Unix Users Group, Virginia Tech, 2011 -- 2012
+#   - Galileo Living -- Learning Community, Virginia Tech, 2011 -- 2012
 # - Trumpet Section Leader, Maring Band, Northside High School, 2010 -- 2011
 # - Math Club, Northside High School, 2010 -- 2011
 # - National Honor Society, Northside High School, 2009 -- 2011
