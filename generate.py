@@ -17,7 +17,7 @@ import bibtexparser.customization as bc
 from bibtexparser.bparser import BibTexParser
 from datetime import date
 from jinja2 import Environment, FileSystemLoader
-
+import pdb
 
 def get_pub_md(context, config):
     """Given the bibtexparser's representation and configuration,
@@ -71,7 +71,7 @@ def get_pub_md(context, config):
         assert('_venue' in pub and 'year' in pub)
         yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
-        imgStr = '<img src="images/publications/{}.png"/>'.format(pub['ID'])
+        imgStr = '<img src="pics/publications/{}.png"/>'.format(pub['ID'])
         links = ['[{}{}]'.format(prefix, gidx)]
         abstract = ''
         if 'abstract' in pub:
@@ -87,6 +87,9 @@ def get_pub_md(context, config):
         if 'codeurl' in pub:
             links.append(
                 "[<a href=\'{}\' target='_blank'>code</a>] ".format(pub['codeurl']))
+        if 'webpage' in pub:
+            links.append(
+                "[<a href=\'{}\' target='_blank'>webpage</a>] ".format(pub['webpage']))
         links = ' '.join(links)
 
         if abstract:
@@ -233,7 +236,6 @@ class RenderContext(object):
         body = ''
         for section_tag, section_title in yaml_data['order']:
             print("  + Processing section: {}".format(section_tag))
-
             section_data = {'name': section_title}
             section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
             if section_tag == 'about':
