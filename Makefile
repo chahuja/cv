@@ -3,8 +3,8 @@
 # Brandon Amos <http://bamos.github.io> and
 # Ellis Michael <http://ellismichael.com>
 
-WEBSITE_DIR=$(HOME)/repos/website
-WEBSITE_PDF=$(WEBSITE_DIR)/data/cv.pdf
+WEBSITE_DIR=$(HOME)/repos/website/chahuja.github.io
+WEBSITE_PDF=$(WEBSITE_DIR)/cv.pdf
 WEBSITE_MD=$(WEBSITE_DIR)/_includes/cv.md
 WEBSITE_DATE=$(WEBSITE_DIR)/_includes/last-updated.txt
 
@@ -21,7 +21,7 @@ else
 	YAML_FILES = cv.yaml
 endif
 
-.PHONY: all public viewpdf stage jekyll push clean
+.PHONY: all public viewpdf stage jekyll push stageweb jekyllweb pushweb clean
 
 all: $(PDF) $(MD)
 
@@ -54,6 +54,18 @@ jekyll: stage
 
 push: stage
 	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_DATE)
+	git -C $(WEBSITE_DIR) commit -m "Update cv."
+	git -C $(WEBSITE_DIR) push
+
+stageweb: $(MD)
+	cp $(MD) $(WEBSITE_MD)
+	date +%Y-%m-%d > $(WEBSITE_DATE)
+
+jekyllweb: stageweb
+	cd $(WEBSITE_DIR) && bundle exec jekyll server
+
+pushweb: stageweb
+	git -C $(WEBSITE_DIR) add $(WEBSITE_MD) $(WEBSITE_DATE)
 	git -C $(WEBSITE_DIR) commit -m "Update cv."
 	git -C $(WEBSITE_DIR) push
 
