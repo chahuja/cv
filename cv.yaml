@@ -23,6 +23,7 @@ order:
   # - [education, Education]
   # - [industry, Experience]
   # - [research, Research Experience]
+  - [book_chapters, Book Chapters]
   - [selected_publications, Selected Publications]
   # - [NEWPAGE, NEWPAGE]
   # - [teaching, Teaching Experience]
@@ -55,3 +56,7 @@ about: 'I am a PhD student at the Language Technologies Institute at <b>Carnegie
 selected_publications:
   name: "C. Ahuja"
   file: selected.bib
+
+book_chapters:
+  name: "C. Ahuja"
+  file: book.bib
