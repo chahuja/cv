@@ -1,4 +1,4 @@
-name:
+yname:
   first: Chaitanya
   last: Ahuja
 # phone: 
@@ -37,7 +37,7 @@ order:
   # - [activities, Activities]
 
 news:
-  - date: July 2019
+  - date: July 2020
     info: "Paper on Style Transfer for Co-Speech Gesture Animation accepted at ECCV'20"
   - date: August 2019
     info: "Paper on Visual Pose Forecasting for Personalized Avatar during Dyadic Conversations accepted at ICMI'19 <a href='https://arxiv.org/pdf/1910.02181.pdf'>[pdf]</a><a href='http://chahuja.com/trontr'>[webpage]</a>"
