@@ -1,8 +1,29 @@
+@article{ahuja2020no,
+  title={No Gestures Left Behind: Learning Relationships between Spoken Language and Freeform Gestures},
+  author={Ahuja, Chaitanya and Lee, Dong Won and Ishii, Ryo and Morency, Louis-Philippe},
+  journal={EMNLP Findings},
+  _venue={EMNLP Findings},
+  year={2020},
+  abstract={We study relationships between spoken language and co-speech gestures in context of two key challenges. First, distributions of text and gestures are inherently skewed making it important to model the long tail. Second, gesture predictions are made at a subword level, making it important to learn relationships between language and audio. We introduce Adversarial Importance Sampled Learning, which combines adversarial learning with importance sampling to strike a balance between precision and coverage. We substantiate the effectiveness of our approach through large-scale quantitative and user studies, which show that our proposed methodology significantly outperforms previous stateof-the-art approaches for gesture generation.
+  }
+}
+
+@article{ishii2020impact,
+  title={Impact of Personality on Nonverbal Behavior Generation},
+  author={Ishii, Ryo and Ahuja, Chaitanya and Nakano, Yukiko I. and Morency, Louis-Philippe},
+  journal={IVA},
+  year={2020},
+  _venue={IVA},
+  abstract={To realize natural-looking virtual agents, one key technical challenge is to automatically generate nonverbal behaviors from spoken language. Since nonverbal behavior varies depending on personality, it is important to generate these nonverbal behaviors to match the expected personality of a virtual agent. In this work, we study how personality traits relate to the process of generating individual nonverbal behaviors from the whole body, including the head, eye gaze, arms, and posture. To study this, we first created a dialogue corpus including transcripts, a broad range of labelled nonverbal behaviors, and the Big Five personality scores of participants in dyad interactions. We constructed models that can predict each nonverbal behavior label given as an input language representation from the participants’ spoken sentences. Our experimental results show that personality can help improve the prediction of nonverbal behaviors.
+  }
+}
+
 @article{ahuja2020style,
   title={Style Transfer for Co-Speech Gesture Animation: A Multi-Speaker Conditional Mixture Approach},
   author={Ahuja, Chaitanya and Lee, Dong Won and Nakano, Yukiko I. and Morency, Louis-Philippe},
   year={2020},
   journal={ECCV},
+  url={https://arxiv.org/abs/2007.12553},
   webpage={http://chahuja.com/mix-stage},
   _venue={ECCV},
   abstract={How can we teach robots or virtual assistants to gesture naturally? Can we go further and adapt the gesturing style to follow a specific speaker? Gestures that are naturally timed with corresponding speech during human communication are called co-speech gestures. A key challenge, called gesture style transfer, is to learn a model that generates these gestures for a speaking agent 'A' in the gesturing style of a target speaker 'B'. A secondary goal is to simultaneously learn to generate co-speech gestures for multiple speakers while remembering what is unique about each speaker. We call this challenge style preservation. In this paper, we propose a new model, named Mix-StAGE, which trains a single model for multiple speakers while learning unique style embeddings for each speaker's gestures in an end-to-end manner. A novelty of Mix-StAGE is to learn a mixture of generative models which allows for conditioning on the unique gesture style of each speaker. As Mix-StAGE disentangles style and content of gestures, gesturing styles for the same input speech can be altered by simply switching the style embeddings. Mix-StAGE also allows for style preservation when learning simultaneously from multiple speakers. We also introduce a new dataset, Pose-Audio-Transcript-Style (PATS), designed to study gesture generation and style transfer. Our proposed Mix-StAGE model significantly outperforms the previous state-of-the-art approach for gesture generation and provides a path towards performing gesture style transfer across multiple speakers. Link to code, data, and videos: http://chahuja.com/mix-stage}

@@ -37,6 +37,14 @@ order:
   # - [activities, Activities]
 
 news:
+  - date: September 2020
+    info: "Paper on Co-Speech Gesture Generation from Language accepted at Findings at EMNLP'20"
+  - date: September 2020
+    info: "Paper on Impact of Personality on Non-verbal behvaiours accepted at IVA'20"
+  - date: August 2020
+    info: "PATS (Pose-Audio-Transcripts-Style) Dataset released. Click <a href='http://chahuja.com/pats'>here</a> for the download links."
+  - date: August 2020
+    info: "Code for Style Transfer for Co-Speech Gesture Animation released <a href='https://github.com/chahuja/mix-stage'>here</a>."
   - date: July 2020
     info: "Paper on Style Transfer for Co-Speech Gesture Animation accepted at ECCV'20"
   - date: August 2019
