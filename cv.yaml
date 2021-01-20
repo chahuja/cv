@@ -36,31 +36,41 @@ order:
   # - [all_publications, All Publications]
   # - [activities, Activities]
 
+# primary - pdf
+# success - webpage
+# info - code
+# secondary - gray
+# dark - abstract
+# danger - red
+# warning - yellow
+
 news:
+  - date: December 2020
+    info: 'Succesfully proposed my thesis titled <b>Communication Beyond Words: Grounding Visual Body Motion with Language</b> <a href="https://drive.google.com/open?id=1lrk5J4vJjBirAyZMOK6pbozGkB4DKebO&authuser=cahuja%40andrew.cmu.edu&usp=drive_fs" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: September 2020
-    info: "Paper on Co-Speech Gesture Generation from Language accepted at Findings at EMNLP'20"
+    info: "Paper on Co-Speech Gesture Generation from Language accepted at Findings at EMNLP 2020"
   - date: September 2020
-    info: "Paper on Impact of Personality on Non-verbal behvaiours accepted at IVA'20"
+    info: "Paper on Impact of Personality on Non-verbal behvaiours accepted at IVA 2020"
   - date: August 2020
-    info: "PATS (Pose-Audio-Transcripts-Style) Dataset released. Click <a href='http://chahuja.com/pats'>here</a> for the download links."
+    info: 'PATS (Pose-Audio-Transcripts-Style) Dataset released. <a href="http://chahuja.com/pats" target="_blank"><button type="button" class="btn btn-success">webpage</button></a>'
   - date: August 2020
-    info: "Code for Style Transfer for Co-Speech Gesture Animation released <a href='https://github.com/chahuja/mix-stage'>here</a>."
+    info: 'Code for Style Transfer for Co-Speech Gesture Animation released. <a href="https://github.com/chahuja/mix-stage" target="_blank"><button type="button" class="btn btn-info">code</button></a>'
   - date: July 2020
-    info: "Paper on Style Transfer for Co-Speech Gesture Animation accepted at ECCV'20"
+    info: "Paper on Style Transfer for Co-Speech Gesture Animation accepted at ECCV 2020"
   - date: August 2019
-    info: "Paper on Visual Pose Forecasting for Personalized Avatar during Dyadic Conversations accepted at ICMI'19 <a href='https://arxiv.org/pdf/1910.02181.pdf'>[pdf]</a><a href='http://chahuja.com/trontr'>[webpage]</a>"
+    info: 'Paper on Visual Pose Forecasting for Personalized Avatar during Dyadic Conversations accepted at ICMI 2019. <a href="https://arxiv.org/pdf/1910.02181.pdf" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: August 2019
     info: "Honourable mention in LTI SRS symposium on my talk on Natural Language Grounded Pose Forecasting"
   - date: July 2019
-    info: "Paper on Natural Language Grounded Pose Forecasting accepted at 3DV'19 <a href='https://arxiv.org/pdf/1907.01108.pdf'>[pdf]</a><a href='http://chahuja.com/language2pose'>[webpage]</a>"
+    info: 'Paper on Natural Language Grounded Pose Forecasting accepted at 3DV 2019 <a href="https://arxiv.org/pdf/1907.01108.pdf" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a> <a href="http://chahuja.com/language2pose" target="_blank"><button type="button" class="btn btn-success">webpage</button></a>'
   - date: March 2018
     info: "Excited to work at Facebook Reality Labs in Summer'18"
   - date: January 2018
-    info: "Paper on Lattice Recurrent Units accepted at AAAI'18 <a href='https://arxiv.org/abs/1710.02254'>[pdf]</a><a href='http://chahuja.com/lru'>[webpage]</a>"
+    info: 'Paper on Lattice Recurrent Units accepted at AAAI 2018 <a href="https://arxiv.org/abs/1710.02254" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a> <a href="http://chahuja.com/lru" target="_blank"><button type="button" class="btn btn-success">webpage</button></a>'
   - date: October 2017
-    info: "Our survey on Multimodal Machine Learning is on <a href='https://arxiv.org/pdf/1705.09406.pdf'>arXiv</a>" 
+    info: 'Our survey on Multimodal Machine Learning is online <a href="https://arxiv.org/pdf/1705.09406.pdf" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
 
-about: 'I am a PhD student at the Language Technologies Institute at <b>Carnegie Mellon University</b>. I am advised by [Dr. Louis-Philippe Morency (LP)](https://www.cs.cmu.edu/~morency/) in the Multicomp Lab and we work on anything multimodal. Lately, my research efforts have been directed towards <b>grounding pose forecasting</b> on Speech, and Language. As an undergraduate researcher at <b>Indian Institute of Technology(IIT), Kanpur</b>. I worked with [Dr. Rajesh Hegde](http://home.iitk.ac.in/~rhegde/) on <b>Spatial Audio</b> and <b>Speaker Diarization</b>, and [Dr. Vinay Namboodiri](https://www.cse.iitk.ac.in/users/vinaypn/) on <b>Video Summarization</b>.
+about: 'I am a PhD candidate at the Language Technologies Institute at <b>Carnegie Mellon University</b>. I am advised by [Dr. Louis-Philippe Morency (LP)](https://www.cs.cmu.edu/~morency/) in the Multicomp Lab and we work on anything multimodal. Lately, my research efforts have been directed towards <b>grounding body gestures</b> in Speech, and Language. As an undergraduate researcher at <b>Indian Institute of Technology(IIT), Kanpur</b>, I worked with [Dr. Rajesh Hegde](http://home.iitk.ac.in/~rhegde/) on <b>Spatial Audio</b> and <b>Speaker Diarization</b>, and [Dr. Vinay Namboodiri](https://www.cse.iitk.ac.in/users/vinaypn/) on <b>Video Summarization</b>.
 '
 
 selected_publications:

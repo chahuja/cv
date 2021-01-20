@@ -59,7 +59,7 @@ def get_pub_md(context, config):
     def _get_pub_str(pub, prefix, gidx, includeImage):
         author_str = _get_author_str(pub['author'])
         # prefix = category['prefix']
-        title = pub['title']
+        title = '{}. '.format(gidx) + pub['title']
         # if title[-1] not in ("?", ".", "!"):
         #    title += ","
         # title = '"{}"'.format(title)
@@ -72,26 +72,26 @@ def get_pub_md(context, config):
         yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
         imgStr = '<img src="pics/publications/{}.png"/>'.format(pub['ID'])
-        links = ['[{}{}]'.format(prefix, gidx)]
+        links = ['']#['[{}{}]'.format(prefix, gidx)]
         abstract = ''
 
         if 'abstract' in pub:
             links.append("""
-[<a href='javascript: none'
-    onclick=\'$(\"#abs_{}{}\").toggle()\'>abs</a>]""".format(pub['ID'], prefix))
+<a href='javascript: none'
+    onclick=\'$(\"#abs_{}{}\").toggle()\'><button type='button' class='btn btn-danger'>abs</button></a>""".format(pub['ID'], prefix))
             abstract = context.make_replacements(pub['abstract'])
 
         if 'link' in pub:
             imgStr = "<a href=\'{}\' target='_blank'>{}</a> ".format(
                 pub['link'], imgStr)
             links.append(
-                "[<a href=\'{}\' target='_blank'>pdf</a>] ".format(pub['link']))
+                "<a href=\'{}\' target='_blank'><button type='button' class='btn btn-primary'>pdf</button></a> ".format(pub['link']))
         if 'codeurl' in pub:
             links.append(
-                "[<a href=\'{}\' target='_blank'>code</a>] ".format(pub['codeurl']))
+                "<a href=\'{}\' target='_blank'><button type='button' class='btn btn-info'>code</button></a> ".format(pub['codeurl']))
         if 'webpage' in pub:
             links.append(
-                "[<a href=\'{}\' target='_blank'>webpage</a>] ".format(pub['webpage']))
+                "<a href=\'{}\' target='_blank'><button type='button' class='btn btn-success'>webpage</button></a> ".format(pub['webpage']))
         links = ' '.join(links)
 
         if abstract:
@@ -154,7 +154,8 @@ def get_pub_md(context, config):
             details = ""
             # sep = "<br><br>\n"
             sep = "\n"
-            for i, pub in enumerate(pubs):
+            rev_order = reversed(range(len(pubs)))
+            for i, pub in zip(rev_order, pubs):
                 details += _get_pub_str(pub, category['prefix'],
                                         i + 1, includeImage=False) + sep
             type_content['details'] = details
@@ -165,7 +166,8 @@ def get_pub_md(context, config):
         pubs = load_and_replace(config['file'])
         details = ""
         sep = "\n"
-        for i, pub in enumerate(pubs):
+        rev_order = reversed(range(len(pubs)))
+        for i, pub in zip(rev_order, pubs):
             details += _get_pub_str(pub, '', i + 1, includeImage=True) + sep
         contents['details'] = details
         contents['file'] = config['file']
