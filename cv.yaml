@@ -25,6 +25,7 @@ order:
   # - [research, Research Experience]
   - [book_publications, Book Chapters]
   - [selected_publications, Selected Publications]
+  - [talks, Talks]
   # - [NEWPAGE, NEWPAGE]
   # - [teaching, Teaching Experience]
   # - [projects, Projects]
@@ -80,3 +81,12 @@ selected_publications:
 book_publications:
   name: "C. Ahuja"
   file: book.bib
+
+talks:
+  - title: EMNLP 2020
+    link: https://slideslive.com/38940175/no-gestures-left-behind-learning-relationships-between-spoken-language-and-freeform-gestures
+    kind: other
+    filename: emnlp2020_talk.png
+  - title: ECCV 2020
+    link: https://www.youtube.com/embed/L7ZGHmMJLCc
+    kind: youtube
