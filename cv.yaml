@@ -20,18 +20,20 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 order:
   - [about, NONE]
   - [news, News]
-  # - [education, Education]
   # - [industry, Experience]
   # - [research, Research Experience]
   - [book_publications, Book Chapters]
+  - [preprints_publications, Preprints]
   - [selected_publications, Selected Publications]
-  - [talks, Talks]
-  # - [NEWPAGE, NEWPAGE]
-  # - [teaching, Teaching Experience]
+  - [resources_publications, Resources]
+  - [education, Education]    
+  - [talks, Academic Talks]
+  - [advising, Student Mentorship]  
+  - [teaching, Teaching Experience]
+  - [service, Professional Activities and Service]
+  #- [honors, Honors \& Awards]  
   # - [projects, Projects]
   # - [coursework, CMU Graduate Coursework]
-  # - [honors, Honors \& Awards]
-  # - [service, Service]
   # - [skills, Skills]
   # - [NEWPAGE, NEWPAGE]
   # - [all_publications, All Publications]
@@ -46,6 +48,8 @@ order:
 # warning - yellow
 
 news:
+  - date: May 2020
+    info: 'We are organizing the <b>First Workshop on Crossmodal Social Animation</b> at <a href="http://iccv2021.thecvf.com/">ICCV2021</a>. Consider submissing your work. <a href="http://sites.google.com/view/xs-anim" target="_blank"><button type="button" class="btn btn-success">webpage</button></a>'
   - date: December 2020
     info: 'Succesfully proposed my thesis titled <b>Communication Beyond Words: Grounding Visual Body Motion with Language</b> <a href="https://drive.google.com/open?id=1lrk5J4vJjBirAyZMOK6pbozGkB4DKebO&authuser=cahuja%40andrew.cmu.edu&usp=drive_fs" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: September 2020
@@ -71,8 +75,9 @@ news:
   - date: October 2017
     info: 'Our survey on Multimodal Machine Learning is online <a href="https://arxiv.org/pdf/1705.09406.pdf" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
 
-about: 'I am a PhD candidate at the Language Technologies Institute at <b>Carnegie Mellon University</b>. I am advised by [Dr. Louis-Philippe Morency (LP)](https://www.cs.cmu.edu/~morency/) in the Multicomp Lab and we work on anything multimodal. Lately, my research efforts have been directed towards <b>grounding body gestures</b> in Speech, and Language. As an undergraduate researcher at <b>Indian Institute of Technology(IIT), Kanpur</b>, I worked with [Dr. Rajesh Hegde](http://home.iitk.ac.in/~rhegde/) on <b>Spatial Audio</b> and <b>Speaker Diarization</b>, and [Dr. Vinay Namboodiri](https://www.cse.iitk.ac.in/users/vinaypn/) on <b>Video Summarization</b>.
-'
+#about: 'I am a PhD candidate at the Language Technologies Institute at <b>Carnegie Mellon University</b>. I am advised by [Dr. Louis-Philippe Morency (LP)](https://www.cs.cmu.edu/~morency/) in the Multicomp Lab and we work on anything multimodal. Lately, my research efforts have been directed towards <b>grounding body gestures</b> in Speech, and Language. As an undergraduate researcher at <b>Indian Institute of Technology(IIT), Kanpur</b>, I worked with [Dr. Rajesh Hegde](http://home.iitk.ac.in/~rhegde/) on <b>Spatial Audio</b> and <b>Speaker Diarization</b>, and [Dr. Vinay Namboodiri](https://www.cse.iitk.ac.in/users/vinaypn/) on <b>Video Summarization</b>.'
+
+about: 'I am a final year PhD candidate at the Language Technologies Institute at <b>Carnegie Mellon University</b>. I am advised by [Dr. Louis-Philippe Morency (LP)](https://www.cs.cmu.edu/~morency/) in the Multicomp Lab. My research focuses on endowing agents and remote avatars with realistic <b>Virtual Presence</b> and <b>Social Intelligence</b> by means of <b>Multimodal Generative Modeling</b>. These directions have the potential of making a meaningful impact on remote communication, collaborations, education and mental health for human-human and human-robot interaction, especially now when a lot of social and work spaces are gradually moving online. <br> <br> In the past, I have interned at Facebook Reality Labs on generation of nonverbal behaviours for a communicating avatar. As an undergraduate researcher at <b>Indian Institute of Technology(IIT), Kanpur</b>, I worked with [Dr. Rajesh Hegde](http://home.iitk.ac.in/~rhegde/) on <b>Spatial Audio</b> and <b>Speaker Diarization</b>, and [Dr. Vinay Namboodiri](https://www.cse.iitk.ac.in/users/vinaypn/) on <b>Video Summarization</b>'
 
 selected_publications:
   name: "C. Ahuja"
@@ -82,11 +87,101 @@ book_publications:
   name: "C. Ahuja"
   file: book.bib
 
+preprints_publications:
+  name: "C. Ahuja"
+  file: preprints.bib
+
+resources_publications:
+  name: "C. Ahuja"
+  file: resources.bib
+
+education:
+  - school: Carnegie Mellon University
+    location: Pittsburgh, PA
+    degree: Ph.D. in Language Technologies
+    dates: 2015 -- 2021 (Expected)
+    overallGPA: 3.97/4.00
+    details:
+      - "Thesis Proposal: <a href='https://drive.google.com/open?id=1lrk5J4vJjBirAyZMOK6pbozGkB4DKebO&authuser=cahuja%40andrew.cmu.edu&usp=drive_fs'>Communication Beyond Words: Grounding Visual Body Motion with Language</a>"
+      - "Advisor: <a href='https://www.cs.cmu.edu/~morency/'>Louis-Philippe Morency</a>"
+  - school: Indian Institute of Technology
+    location: Kanpur, India
+    degree: B.Tech. in Electrical Engineering
+    dates: 2011 -- 2015
+    overallGPA: 9.5/10
+    details:
+      - "Advisors: <a href='http://home.iitk.ac.in/~rhegde/'>Rajesh Hegde</a>, <a href='https://vinaypn.github.io/'>Vinay P. Namboodiri</a>"
+
+
+# talks:
+#   - title: EMNLP 2020
+#     link: https://slideslive.com/38940175/no-gestures-left-behind-learning-relationships-between-spoken-language-and-freeform-gestures
+#     kind: other
+#     filename: emnlp2020_talk.png
+#   - title: ECCV 2020
+#     link: https://www.youtube.com/embed/L7ZGHmMJLCc
+#     kind: youtube
+
 talks:
-  - title: EMNLP 2020
-    link: https://slideslive.com/38940175/no-gestures-left-behind-learning-relationships-between-spoken-language-and-freeform-gestures
-    kind: other
-    filename: emnlp2020_talk.png
-  - title: ECCV 2020
-    link: https://www.youtube.com/embed/L7ZGHmMJLCc
-    kind: youtube
+  - title: "Communication Beyond Words: Grounding Visual Body Motion with Spoken Language"
+    location: KTH Stockholm, Online
+    year: April 2021
+  - title: Learning Relationships between Spoken Language and Freeform Gestures
+    location: EMNLP 2020 Workshop on NLP Beyond Text, Online
+    year: Novermber 2020
+    url: "https://slideslive.com/38940175/no-gestures-left-behind-learning-relationships-between-spoken-language-and-freeform-gestures"
+  - title: Style Transfer for Co-speech Gesture Generation
+    year: September 2020
+    url: "https://www.youtube.com/embed/L7ZGHmMJLCc"
+  - title: End-to-End Visual Pose Forecasting for Personalized Avatar during Dyadic Conversations
+    location: ACM International Conference on Multimodal Interaction, Suzhou, China
+    year: October 2019
+  - title: Natural Language Grounded Pose Forecasting
+    location: LTI Student Research Symposium, Pittsburgh PA
+    year: August 2019
+
+teaching:
+  - name: <a href="https://structuredprediction11763.github.io/structuredprediction.github.io/">Structured Prediction for Language and Other Discrete Data</a>
+    semester: Spring 2018
+    short: CMU 11-763
+    position: Head TA
+  - name: Multimodal Machine Learning
+    semester: Spring 2017
+    short: CMU 11-777
+    position: Head TA
+
+service:
+  - details: "Co-organizer: ICCV 2021 First Workshop on Crossmodal Social Animation"
+    year: 2021
+    url: https://sites.google.com/view/xs-anim
+  - details: "Co-organizer: Multimodal Machine Learning Reading Group, CMU"
+    year: Spring 2020
+  - details: "Conference Program Commiitee: Neurips, SIGGRAPH, ICLR, ACL, EMNLP, ACM Multimedia, ICMI"
+  - details: "Workshop Program Committee: NeurIPS workshop on Multimodal Machine Learning, ACL Workshop on Multimodal Language, NAACL-HLT Student Research Workshop, ICMI GENEA Workshop"
+  - details: "Grant Reviewer: Army Research Office (ARO)"
+  - details: CMU Graduate Applicant Support Program Volunteer
+    year: 2020
+  - details: CMU AI Undergraduate Research Mentor
+    year: 2020-21
+  - details: CMU Graduate Student Association Representative for Language Technologies Institute
+    year: 2017
+
+advising:
+  - name: Dong Won Lee
+    details: "(CMU BS → CMU MS in Machine Learning): Self-supervised generative models."
+    url: https://www.linkedin.com/in/don-dong-won-lee-ab964b172/
+  - name: Shradha Sehgal
+    details: "(IIIT Hyderabad B.Tech.): Evaluation of generative models."
+    url: https://web.iiit.ac.in/~shradha.sehgal/
+  - name: Arvin Wu
+    details: "(CMU BS): Social intelligence benchmarking."
+  - name: Nikitha Murikinati
+    details: "(CMU BS): Study of relationships between co-speech gestures and prosody."
+    url: https://www.linkedin.com/in/nikithamurikinati/
+  - name: Sharath Rao
+    details: "(CMU MS → PlayStation) Back-channel prediction in dyadic conversations."
+    url: https://www.linkedin.com/in/sharathrao1/
+  - name: Qingtao Hu
+    details: "(CMU MS → Amazon): Unsupervised disentanglement of style and content in images."
+  - name: Anirudha Rayasam
+    details: "(CMU MS → Google): Language grounded pose forecasting."
