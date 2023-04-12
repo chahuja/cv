@@ -48,6 +48,8 @@ order:
 # warning - yellow
 
 news:
+  - date: Feb 2023
+    info: 'Survey paper on Co-Speech Gestures accepted in the STAR track at Eurographics 2023. <a href="https://arxiv.org/abs/2301.05339" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: May 2022
     info: 'Excited to join Meta AI as a Research Scientist'
   - date: April 2022
