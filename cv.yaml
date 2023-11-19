@@ -23,7 +23,7 @@ order:
   # - [industry, Experience]
   # - [research, Research Experience]
   - [book_publications, Book Chapters]
-  - [preprints_publications, Preprints]
+  # - [preprints_publications, Preprints]
   - [selected_publications, Selected Publications]
   - [resources_publications, Resources]
   - [education, Education]    
