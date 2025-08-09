@@ -23,7 +23,7 @@ order:
   # - [industry, Experience]
   # - [research, Research Experience]
   - [book_publications, Book Chapters]
-  # - [preprints_publications, Preprints]
+  - [preprints_publications, Preprints]
   - [selected_publications, Selected Publications]
   - [resources_publications, Resources]
   - [education, Education]    
@@ -48,6 +48,10 @@ order:
 # warning - yellow
 
 news:
+  - date: March 2025
+    info: 'Preprint on a Simple and Effective Reinforcement Learning Method for Text-to-Image Diffusion Fine-tuning out on arXiv'
+  - date: March 2025
+    info: 'Paper on Multi-Modal Large Language Models as Effective Vision Learners accepted at WACV 2025'
   - date: Feb 2023
     info: 'Survey paper on Co-Speech Gestures accepted in the STAR track at Eurographics 2023. <a href="https://arxiv.org/abs/2301.05339" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: May 2022
