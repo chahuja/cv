@@ -49,9 +49,9 @@ order:
 
 news:
   - date: March 2025
-    info: 'Preprint on a Simple and Effective Reinforcement Learning Method for Text-to-Image Diffusion Fine-tuning out on arXiv'
-  - date: March 2025
-    info: 'Paper on Multi-Modal Large Language Models as Effective Vision Learners accepted at WACV 2025'
+    info: 'Preprint on a Simple and Effective Reinforcement Learning Method for Text-to-Image Diffusion Fine-tuning out on arXiv. <a href="https://arxiv.org/pdf/2503.00897v1" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
+  - date: February 2025
+    info: 'Paper on Multi-Modal Large Language Models as Effective Vision Learners accepted at WACV 2025. <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Sun_Multi-Modal_Large_Language_Models_are_Effective_Vision_Learners_WACV_2025_paper.pdf" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: Feb 2023
     info: 'Survey paper on Co-Speech Gestures accepted in the STAR track at Eurographics 2023. <a href="https://arxiv.org/abs/2301.05339" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: May 2022
