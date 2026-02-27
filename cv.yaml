@@ -48,8 +48,14 @@ order:
 # warning - yellow
 
 news:
-  - date: March 2025
-    info: 'Preprint <b>Simple and Effective Reinforcement Learning Method for Text-to-Image Diffusion Fine-tuning</b> out on arXiv. <a href="https://arxiv.org/pdf/2503.00897v1" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
+  - date: Feb 2026
+    info: 'Paper <b>A Simple and Effective Reinforcement Learning Method for Text-to-Image Diffusion Fine-tuning</b> accepted at TMLR 2026. <a href="https://arxiv.org/pdf/2503.00897v1" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
+  - date: Feb 2026
+    info: 'Preprint <b>Xray-Visual Models: Scaling Vision models on Industry Scale Data</b> now available on arXiv. <a href="https://arxiv.org/abs/2602.16918" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
+  - date: Feb 2026
+    info: 'Paper <b>Think Then Embed: Generative Context Improves Multimodal Embedding</b> accepted at ICLR 2026. <a href="https://arxiv.org/abs/2510.05014" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
+  # - date: March 2025
+  #   info: 'Preprint <b>Simple and Effective Reinforcement Learning Method for Text-to-Image Diffusion Fine-tuning</b> out on arXiv. <a href="https://arxiv.org/pdf/2503.00897v1" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: February 2025
     info: 'Paper <b>Multi-Modal Large Language Models as Effective Vision Learners</b> accepted at WACV 2025. <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Sun_Multi-Modal_Large_Language_Models_are_Effective_Vision_Learners_WACV_2025_paper.pdf" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: Feb 2023
