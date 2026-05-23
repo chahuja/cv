@@ -48,6 +48,8 @@ order:
 # warning - yellow
 
 news:
+  - date: May 2026
+    info: 'Preprint <b>TTE-Flash: Accelerating Reasoning-based Multimodal Representations via Think-Then-Embed Tokens</b> now available on arXiv. <a href="https://arxiv.org/abs/2605.16638" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: Feb 2026
     info: 'Paper <b>A Simple and Effective Reinforcement Learning Method for Text-to-Image Diffusion Fine-tuning</b> accepted at TMLR 2026. <a href="https://arxiv.org/pdf/2503.00897v1" target="_blank"><button type="button" class="btn btn-primary">pdf</button></a>'
   - date: Feb 2026
@@ -190,7 +192,7 @@ service:
 
 advising:
   - name: Dong Won Lee
-    details: "(CMU BS → CMU MS in Machine Learning): Self-supervised generative models."
+    details: "(CMU BS -> CMU MS in Machine Learning): Self-supervised generative models."
     url: https://www.linkedin.com/in/don-dong-won-lee-ab964b172/
   - name: Shradha Sehgal
     details: "(IIIT Hyderabad B.Tech.): Evaluation of generative models."
@@ -201,9 +203,9 @@ advising:
     details: "(CMU BS): Study of relationships between co-speech gestures and prosody."
     url: https://www.linkedin.com/in/nikithamurikinati/
   - name: Sharath Rao
-    details: "(CMU MS → PlayStation) Back-channel prediction in dyadic conversations."
+    details: "(CMU MS -> PlayStation) Back-channel prediction in dyadic conversations."
     url: https://www.linkedin.com/in/sharathrao1/
   - name: Qingtao Hu
-    details: "(CMU MS → Amazon): Unsupervised disentanglement of style and content in images."
+    details: "(CMU MS -> Amazon): Unsupervised disentanglement of style and content in images."
   - name: Anirudha Rayasam
-    details: "(CMU MS → Google): Language grounded pose forecasting."
+    details: "(CMU MS -> Google): Language grounded pose forecasting."
